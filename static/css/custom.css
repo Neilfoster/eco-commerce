@@ -1,0 +1,73 @@
+/* Navbar */
+.cstm-nav {
+  background-color:#5da740;
+
+}
+
+.nav_txt {
+  font-family: 'Dosis';
+}
+.cstm-nav li a {
+  color:#5da740;
+}
+
+.cstm-btn {
+  text-align: center;
+  height: 40px;
+  width: 146px;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  background-color: #5da73f;
+  outline: none;
+}
+
+.crd-img {
+  padding-left: 0;
+}
+
+/* FOOTER */
+.cstm-foot {
+  background-color: rgba(0,0,0,.075);
+  color: #5da740;
+  max-height: 1%;
+  padding-top: 2;
+  text-align:center;
+}
+.cstm-foot p {
+  font-size: 0.6rem;
+  margin-bottom: 0;
+}
+.cstm-foot h2, h5 {
+    font-family: 'Dosis';
+    margin-top: 1%;
+    text-align: center;
+}
+
+.cstm-foot ul li  {
+  list-style-type: none;
+}
+
+.cstm-social ul {
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.cstm-social ul li {
+  padding: 2%;
+  color: white;
+  margin-left: 10%;
+  text-align: center;
+}
+.cstm-email {
+  text-align: left;
+  max-height: 2px;
+}
+.foot-frm {
+  font-size: 0.8rem;
+}
+

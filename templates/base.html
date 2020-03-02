@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Eco Commerce Shop</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/custom.css' %}" >
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
 
   <script src="https://kit.fontawesome.com/8aa891fdce.js" crossorigin="anonymous"></script>
@@ -64,7 +64,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'login' %}">Log In</a>
           </li>
-          {% end if %}
+          {% endif %}
         </ul>
       </div>
     </div>
@@ -74,7 +74,7 @@
         <div class="messages">
         {% for message in messages %}
             {{ message }}
-        {% end for %}
+        {% endfor %}
         </div>  
     </div>
     {% endif %}

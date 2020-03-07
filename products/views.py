@@ -7,3 +7,6 @@ def all_products(request):
     return render(request, "products/products.html", {"products": products})
 
 
+def all_household(request):
+    products = Product.objects.filter(category='Household')
+    return render(request,"products/all_household.html", {'products': products})

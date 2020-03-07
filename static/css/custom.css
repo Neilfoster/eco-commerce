@@ -29,6 +29,10 @@
   padding-left: 0;
 }
 
+/* Product display page */
+.cstm-product{
+    margin-top: 50%;
+}
 /* FOOTER */
 .cstm-foot {
   background-color: rgba(0,0,0,.075);

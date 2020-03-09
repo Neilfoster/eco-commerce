@@ -11,6 +11,7 @@
   color:#5da740;
 }
 
+/* index page card display button */
 .cstm-btn {
   text-align: center;
   height: 40px;
@@ -23,8 +24,22 @@
   color: #ffffff;
   background-color: #5da73f;
   outline: none;
+  transition-duration: 1s
 }
 
+.cstm-btn:hover,
+.cstm-btn:focus {
+    background-color: #4da73f;
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+.cstm-btn a {
+    color: white;
+    text-decoration: none;
+}
 .crd-img {
   padding-left: 0;
 }

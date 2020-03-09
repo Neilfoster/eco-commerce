@@ -4,12 +4,19 @@
 
 }
 
+
 .nav_txt {
   font-family: 'Dosis';
 }
-.cstm-nav li a {
-  color:#5da740;
+
+.nav-item a {
+    opacity: 1.2;
+    transition-duration: 1.5s;
 }
+.nav-item a:hover {
+  color: yellow;
+  opacity: 2s linear ;
+  }
 
 /* index page card display button */
 .cstm-btn {

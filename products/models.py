@@ -12,5 +12,5 @@ class Product(models.Model):
         return self.name
 
     def format_price_as_euros(self):
-    """ Adds Euro Sign to the start of each price """
+        """ Adds Euro Sign to the start of each price """
         return '€'+str(self.price) 

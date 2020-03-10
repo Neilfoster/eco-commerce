@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% block content %}
 <div class="row row-flex">
     {% for item in cart_items %}
     
@@ -29,10 +32,11 @@
     </div>
     {% endfor %}
 </div>
-<div class="row">
+    <div class="row">
     <p>Total</p>
     <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
     <a href="/" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
-</div>
+    </div>
+
 
 {% endblock %}

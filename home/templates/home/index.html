@@ -66,15 +66,16 @@
   </div>
 
   <!-- Blog-->
-  <div class="container blog">
-    <div class="crd-img" style="max-width: 50%;">
-      <img src="https://images.pexels.com/photos/235615/pexels-photo-235615.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="card-img-top" alt="...">
-      </div>
-      <div class="blog-card-txt">
-        <h4 class="">Why Natural Products are better</h4>
-        <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <button type="button" class="cstm-btn"><a href="{% url 'blog' %}">Read More</a></button>
-      </div>
+  <div class="col-md-8 col-md-offset-2 container blog">
+    <div class="lndg-card">
+          <img src="https://images.pexels.com/photos/235615/pexels-photo-235615.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Why Natural Products are better</h4>
+            <p class="card-text">View our range of all natural self care products for yourself and your family</p>
+            <button type="button" class="cstm-btn"><a href="{% url 'all_selfcare' %}">Read More</a></button>
+          </div>
+     </div>
     </div>
+    
 
 {% endblock %}

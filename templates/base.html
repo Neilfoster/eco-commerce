@@ -34,7 +34,7 @@
             <a class="nav-link" href="{% url 'blog' %}">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'all_selfcare' %}">Shop</a>
+            <a class="nav-link" href="{% url 'products' %}">Shop</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'profile' %}">Profile</a>
@@ -43,7 +43,7 @@
             <a class="nav-link" href="{% url 'logout' %}">Logout</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{% url 'view_cart' %}" class="nav-link">
             <i class="fas fa-shopping-cart"></i>Cart
             {% if product_count > 0 %}
             <label class="badge badge-warning">{{ product_count}}</label>
@@ -59,7 +59,7 @@
             <a class="nav-link" href="{% url 'blog' %}">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'all_selfcare' %}">Shop</a>
+            <a class="nav-link" href="{% url 'products' %}">Shop</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'register' %}">Register</a>

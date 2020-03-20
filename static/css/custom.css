@@ -95,7 +95,7 @@ body {
     height: 150px;
     margin: 0 auto; 
 }
-/* FOOTER */
+/* -------- FOOTER ------------*/
 .cstm-foot {
   background-color: rgba(0,0,0,.075);
   color: #5da740;
@@ -106,6 +106,7 @@ body {
 .cstm-foot p {
   font-size: 0.6rem;
   margin-bottom: 0;
+  color:black;
 }
 .cstm-foot h2, h5 {
     font-family: 'Dosis';
@@ -129,11 +130,20 @@ body {
   margin-left: 10%;
   text-align: center;
 }
-.cstm-email {
-  text-align: left;
-  max-height: 2px;
-}
 .foot-frm {
   font-size: 0.8rem;
 }
-
+.cstm-contact p {
+    font-size: 1rem;
+    margin: 0.8%;
+    color: black;
+    text-align: left;
+    margin-left:15%;
+}
+.top-lne{
+    margin-top:2%;
+}
+.cstm-contact i {
+    margin-right:3%;
+    color: #5da740;
+}

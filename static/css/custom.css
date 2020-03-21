@@ -2,7 +2,7 @@ body {
     padding-top: 50px;
 }
 
-/* Navbar */
+/*-------- Navbar -------*/
 .cstm-nav {
   background-color:#5da740;
 
@@ -24,7 +24,7 @@ body {
       color:#4da73f;
   }
 
-/* index page card display button */
+/*-------- index page card display button --------*/
 .cstm-btn {
   text-align: center;
   height: 40px;
@@ -37,7 +37,7 @@ body {
   color: #ffffff;
   background-color: #5da73f;
   outline: none;
-  transition-duration: 1s
+  transition-duration: 1s;
 }
 
 .cstm-btn:hover,
@@ -53,11 +53,13 @@ body {
     color: white;
     text-decoration: none;
 }
+
 .crd-img {
   padding-left: 0;
 }
 
-/* Product display page */
+/*---------Product display page-------- */
+
 .cstm-product{
     margin-top: 50%;
     margin-bottom:50%;
@@ -96,6 +98,7 @@ body {
     margin: 0 auto; 
 }
 /* -------- FOOTER ------------*/
+
 .cstm-foot {
   background-color: rgba(0,0,0,.075);
   color: #5da740;
@@ -103,11 +106,13 @@ body {
   padding-top: 2;
   text-align:center;
 }
+
 .cstm-foot p {
   font-size: 0.8rem;
   margin-bottom: 0;
   color:black;
 }
+
 .cstm-foot h2, h5 {
     font-family: 'Dosis';
     margin-top: 1%;
@@ -127,15 +132,29 @@ body {
 .cstm-social ul li {
   padding: 2%;
   color: white;
-  margin-left: 10%;
+  margin-left:10%;
   text-align: center;
 }
+
 .cstm-social ul li a {
   color:  #5da740;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
+
+.cstm-social ul li a:hover,
+.cstm-social ul li a:focus {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        font-size:1.3rem;
+        padding:1%;
+}
+
 .foot-frm {
   font-size: 0.8rem;
 }
+
 .cstm-contact p {
     font-size: 0.8rem;
     margin: 0.8%;
@@ -143,9 +162,11 @@ body {
     text-align: left;
     margin-left:15%;
 }
+
 .top-lne{
     margin-top:2%;
 }
+
 .cstm-contact i {
     margin-right:3%;
     color: #5da740;

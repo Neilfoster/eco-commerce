@@ -1,5 +1,6 @@
 body {
     padding-top: 50px;
+    text-align: center;
 }
 
 /*-------- Navbar -------*/
@@ -47,6 +48,10 @@ body {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
+}
+
+.card-title{
+    text-align: center;
 }
 
 .cstm-btn a {

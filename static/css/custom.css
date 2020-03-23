@@ -108,6 +108,16 @@ body {
     height: 150px;
     margin: 0 auto; 
 }
+
+/*--------- REGISTER PAGE ------*/
+.form-group {
+    margin-top:2%;
+}
+
+.form-group a {
+    color:#5da73f;
+}
+
 /* -------- FOOTER ------------*/
 
 .cstm-foot {

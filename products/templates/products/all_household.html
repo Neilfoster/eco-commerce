@@ -6,11 +6,10 @@
         <div class="col-md-6 col-lg-4 display panel panel-default">
             <div class="panel-body cstm-product">
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
-
-                <p>{{ product.category }}</p>
+                <p class="product-category">{{ product.category }}</p>
                 <h3>{{ product.name }}</h3>
                 <p class="product-description">{{ product.description }}</p>
-                <p>{{ product.format_price_as_euros }}</p>
+                <p class="product-price">{{ product.format_price_as_euros }}</p>
                 
             <form method="post" action="{% url 'add_to_cart' product.id %}">
                     {% csrf_token %}

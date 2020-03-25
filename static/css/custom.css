@@ -99,8 +99,23 @@ body {
     margin-bottom:3%;
 }
 
+.panel-body h3 {
+    margin-top:3%;
+    text-align: center;
+    color: #5da73f;
+}
+
 .product-description {
     min-height: 40px;
+}
+
+.product-category{
+    text-align: center;
+}
+.product-price {
+    text-align:right;
+    font-size:1.5rem;
+    color:#4da73f;
 }
 
 .product {

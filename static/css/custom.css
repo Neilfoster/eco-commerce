@@ -112,6 +112,17 @@ body {
     margin: 0 auto; 
 }
 
+/*--------- Blog Page ------*/
+
+.blog-img {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto; 
+}
+
 /*--------- REGISTER PAGE ------*/
 .form-group {
     margin-top:2%;

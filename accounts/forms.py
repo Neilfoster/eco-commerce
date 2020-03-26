@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.core.exceptions import ValidationError
 
+
 class UserLoginForm(forms.Form):
     """Form to be used to log users in"""
 
@@ -36,8 +37,7 @@ class UserRegistrationForm(UserCreationForm):
 
         if not password1 or not password2:
             raise ValidationError("Please confirm your password")
-        
         if password1 != password2:
             raise ValidationError("Passwords must match")
-        
-        return password2
+            return password2
+

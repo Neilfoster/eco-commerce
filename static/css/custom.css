@@ -138,6 +138,53 @@ body {
     margin: 0 auto; 
 }
 
+/*--------- Checkout Page ------*/
+
+#cart-product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width:100px;
+    height:50px;
+    margin: 0 auto;
+}
+
+.checkout-itm {
+    padding:5%;
+    border-bottom: 1px solid #b7bfb9;
+}
+
+.check-bx {
+    padding-right:8%;
+}
+
+.check-total p {
+  color:#5da73f;
+  padding:1%;
+  text-align: right;
+}
+
+.row p.check-total{
+    color:blue;
+    padding-right:3%;
+    padding-top:2%;
+}
+.ajust-bx {
+    height:1%;
+    min-width:100px;
+}
+
+.check-foot{
+    justify-content: end;
+}
+
+.check-foot a {
+    margin-bottom: 52%;
+}
+
+.check-qty {
+    color:blue;
+}
 /*--------- REGISTER PAGE ------*/
 .form-group {
     margin-top:2%;
@@ -163,7 +210,7 @@ body {
   color:black;
 }
 
-.cstm-foot h2, h5 {
+.cstm-foot h2 {
     font-family: 'Dosis';
     margin-top: 1%;
     text-align: center;

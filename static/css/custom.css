@@ -146,7 +146,6 @@ body {
     background-repeat: no-repeat;
     width:100px;
     height:50px;
-    margin: 0 auto;
 }
 
 .checkout-itm {
@@ -169,11 +168,20 @@ body {
     padding-right:3%;
     padding-top:2%;
 }
-.ajust-bx {
-    height:1%;
-    min-width:100px;
+input.adjust-bx {
+    height:5%;
+    border: 1px solid #5da73f;
+    border-radius:10%;
+    margin-right:4%;
 }
 
+button.amend-btn{
+    background-color:#5da73f;
+    color: white;
+    border-radius:10%;
+    padding:2%;
+    height:5%;
+}
 .check-foot{
     justify-content: end;
 }
@@ -184,6 +192,14 @@ body {
 
 .check-qty {
     color:blue;
+}
+
+.input-group {
+    flex-wrap:nowrap;
+}
+
+form.form-inline {
+    justify-content: end;
 }
 /*--------- REGISTER PAGE ------*/
 .form-group {

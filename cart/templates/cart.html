@@ -7,27 +7,28 @@
     <div class="col-12">
         <div class="caption row checkout-itm">
                 <div id="cart-product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
-                <h5 class="col-3">{{ item.product.name }}</h5>
-                <p class="col-3">{{ item.product.format_price_as_euros }}</p>
-                    <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
+                <h5 class="col-md-3 col-sm-12">{{ item.product.name }}</h5>
+                <p class="col-md-3 col-sm-12">{{ item.product.format_price_as_euros }}</p>
+                <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                     {% csrf_token %}
-                        <div class="form-group col-6">
-                            <label for="exampleInputAmount" class="sr-only">New Qty</label>
-                            <div class="input-group">
-                                <div class="check-bx">Qty</div>
-                                <div class="check-bx check-qty">{{item.quantity}}</div>
-                                <input name="quantity" type="number" min="0" max="999" class="form-control adjust-bx">
-                            </div>
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="exampleInputAmount" class="sr-only">New Qty</label>
+                        <div class="input-group">
+                            <div class="check-bx">Qty</div>
+                            <div class="check-bx check-qty">{{item.quantity}}</div>
+                            <input name="quantity" type="number" min="0" max="999" class="adjust-bx">
+                            <button type="submit" class="amend-btn"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Update</button>
                         </div>
-                    <button type="submit" class="amend-btn"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Amend</button>
-                    </form>
+                    </div>
+                    
+                </form>
         </div>
     </div>
     
     {% endfor %}
 </div>
 <div class="check-foot">
-    <div class="row offset-10 col-2">
+    <div class="row offset-md-10 col-md-2 col-sm-12">
         <p class="check-total check-qty">Total</p>
         <p class="check-total"><span class="check-bx" aria-hidden="true"></span>€{{ total}}</p>
         <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>

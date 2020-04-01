@@ -138,7 +138,7 @@ body {
     margin: 0 auto; 
 }
 
-/*--------- Checkout Page ------*/
+/*--------- Checkout + Cart  ------*/
 
 #cart-product {
     background-size: contain;
@@ -148,6 +148,17 @@ body {
     height:50px;
 }
 
+#checkout-head {
+    margin-top: 5%;
+    padding-bottom:5%;
+    color:#4da73f;
+    border-bottom: 1px solid #4da73f;
+}
+
+#payment-head {
+    color:#4da73f;
+    font-size: 2rem;
+}
 .checkout-itm {
     padding:5%;
     border-bottom: 1px solid #b7bfb9;

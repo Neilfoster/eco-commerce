@@ -2,4 +2,8 @@
 {% block content %}
     <h2>Success!</h2>
     <p>You are logged in as {{ user.username }} </p>
+    {% for p in Profile%}
+    <p>Location{{ p.location }} </p>
+    <p>Birthday {{ p.birthdate }} </p>
+    {% endfor %}
 {% endblock %}

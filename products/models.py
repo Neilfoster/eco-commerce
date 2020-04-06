@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 class Product(models.Model):
     category = models.CharField(max_length=254, default='')
     name = models.CharField(max_length=254, default='')

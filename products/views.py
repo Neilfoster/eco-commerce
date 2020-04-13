@@ -13,7 +13,8 @@ def all_products(request):
 def all_household(request):
     """ Returns All Household Products Available"""
     products = Product.objects.filter(category='Household')
-    return render(request, "products/all_household.html", {'products': products})
+    return render(request, "products/all_household.html", 
+    {'products': products})
 
 
 def all_selfcare(request):

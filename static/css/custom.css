@@ -138,6 +138,12 @@ body {
     margin: 0 auto; 
 }
 
+.blog-btn {
+    text-align: center;
+    margin: auto;
+    margin-bottom:5%;
+}
+
 /*--------- Checkout + Cart  ------*/
 
 #cart-product {

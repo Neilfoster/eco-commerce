@@ -3,11 +3,11 @@
 
 {% block content %}
 <div class="create_blog">
-    <h2>Create a Blog Entry</h2>
+    <h2 id="blog-head">Create a Blog Entry</h2>
     <form class="blog-form" action="{% url 'create_blog' %}" method="post" enctype="multipart/form-data">
 {% csrf_token %}
 {{ form | as_bootstrap }}
-        <input type="submit" value="Create">
+        <input class="cstm-btn blog-btn" type="submit" value="Create">
     </form>
 </div>
 

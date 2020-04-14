@@ -143,6 +143,16 @@ body {
     margin-bottom:5%;
 }
 
+#blog-head {
+    color:#5da73f;
+    margin-top:5%;
+
+}
+
+.blog-form {
+    color:#5da73f;
+}
+
 /*--------- Checkout + Cart  ------*/
 
 #cart-product {

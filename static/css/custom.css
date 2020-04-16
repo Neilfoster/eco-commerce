@@ -190,7 +190,7 @@ body {
 }
 
 .row p.check-total{
-    color:blue;
+    color:#5da73f;
     padding-right:3%;
     padding-top:2%;
 }
@@ -217,7 +217,7 @@ button.amend-btn{
 }
 
 .check-qty {
-    color:blue;
+    color:#5da73f;
 }
 
 .input-group {

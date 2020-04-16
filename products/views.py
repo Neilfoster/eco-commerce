@@ -7,6 +7,7 @@ from .models import Product
 def all_products(request):
     """ Returns All Products Available"""
     products = Product.objects.all()
+    
     return render(request, "products/products.html", {"products": products})
 
 

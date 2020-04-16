@@ -27,3 +27,4 @@ def all_selfcare(request):
 def index(request):
     """ Returns Index Page"""
     return render(request, "products/index.html")
+    

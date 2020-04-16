@@ -40,16 +40,6 @@
         <input class="cstm-btn" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
     </div>
 </form>
-{% if messages %}
-    <div class="alert alert-danger">
-        <div class="messages">
-         {% for message in messages %}
-            {{ message }}
-        {% endfor %}
-        </div>
-    </div>
-{% endif %}
-
 {% endblock %}
 
 

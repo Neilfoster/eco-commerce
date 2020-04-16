@@ -56,6 +56,7 @@ body {
 .cstm-btn a {
     color: white;
     text-decoration: none;
+    margin:auto;
 }
 
 .crd-img {
@@ -227,6 +228,15 @@ button.amend-btn{
 form.form-inline {
     justify-content: end;
 }
+
+#cstm-success {
+    margin:5%;
+}
+
+#cstm-success a {
+    margin:auto;
+}
+
 /*--------- REGISTER PAGE ------*/
 .form-group {
     margin-top:2%;

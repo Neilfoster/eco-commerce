@@ -1,8 +1,10 @@
 from django.db import models
+from accounts.models import Profile
 from products.models import Product
 
 # Create your models here.
 class Order(models.Model):
+    user = models.ForeignKey('auth.User', on_delete=models.CASCADE, null=True)
     full_name = models.CharField(max_length=70, blank=False)
     phone_number = models.CharField(max_length=20, blank=False)
     country = models.CharField(max_length=40, blank=False)

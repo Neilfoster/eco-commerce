@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, HttpResponseRedirect
 from django.contrib import messages, auth
 from django.core.urlresolvers import reverse
@@ -5,6 +6,8 @@ from .forms import UserLoginForm, UserRegistrationForm
 from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 from .models import Profile
+from django.utils import timezone
+from checkout.models import Order, OrderLineItem
 
 
 # Create your views here.
@@ -52,6 +55,18 @@ def profile(request):
     profile = Profile.objects.filter(user=request.user)
     return render(request, 'profile.html', {'Profile': profile})
 
+@login_required
+def order_list(request):
+    """
+    Retrieves the order history of the user
+    """
+    if request.user:
+        order_list = Order.objects.filter(user=request.user, date__lte=timezone.now())
+        paginator = Paginator(order_list, 6)
+
+        page = request.GET.get('page')
+        orders = paginator.page(1)
+        return render(request, "order_list.html", {'orders': orders})
 
 def register(request):
     """A view that manages the registration form"""

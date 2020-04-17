@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <section class="col-md-9">
+    <div>
+      <h1>Order #: {{ order.id }}</h1>
+
+      <h3>Order date:</h4>
+      <p>{{ Order.date }}</p>
+     <h3>Items ordered:</h4>
+
+      {% for item in items %}
+        <div class="row">
+          <p class="col-sm-2 col-md-3">{{ item.product.name }}</p>
+          <p class="col-sm-1 col-md-1">{{ item.quantity }}</p>
+        </div>
+      {% endfor %}
+
+      <h4>Total:</h4>
+      <p>£{{ order_total }}</p>
+    </div>
+  </section>
+
+{% endblock %}

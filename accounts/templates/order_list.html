@@ -5,14 +5,14 @@
     <div>
       <h1>Order #: {{ order.id }}</h1>
 
-      <h3>Order date:</h4>
+      <h3>Order date:</h3>
       <p>{{ Order.date }}</p>
-     <h3>Items ordered:</h4>
+     <h3>Items ordered:</h3>
 
-      {% for item in items %}
+      {% for order in order_list %}
         <div class="row">
-          <p class="col-sm-2 col-md-3">{{ item.product.name }}</p>
-          <p class="col-sm-1 col-md-1">{{ item.quantity }}</p>
+          <p class="col-sm-2 col-md-3">{{ order.name }}</p>
+          <p class="col-sm-1 col-md-1">{{ order.quantity }}</p>
         </div>
       {% endfor %}
 

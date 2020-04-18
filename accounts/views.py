@@ -7,7 +7,7 @@ from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 from .models import Profile
 from django.utils import timezone
-from checkout.models import Order, OrderLineItem
+from checkout.models import Order
 
 
 # Create your views here.
@@ -61,12 +61,8 @@ def order_list(request):
     Retrieves the order history of the user
     """
     if request.user:
-        order_list = Order.objects.filter(user=request.user, date__lte=timezone.now())
-        paginator = Paginator(order_list, 6)
-
-        page = request.GET.get('page')
-        orders = paginator.page(1)
-        return render(request, "order_list.html", {'orders': orders})
+        order_list = Order.objects.all()
+        return render(request, "order_list.html", {'order_list': order_list})
 
 def register(request):
     """A view that manages the registration form"""

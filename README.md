@@ -1,35 +1,35 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Eco Clean | Milestone Project 4
 
-Welcome Neilfoster,
+### Why I made this site
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+Eco Clean is an App that allows users to buy natural Eco friendly cleaning 
+and self care products as an alternative to the chemical heavy versions sold in
+most supermarkets and stores. 
+This is my final project at the end of [Code Institute's](https://codeinstitute.net/) Full
+Stack Web Developer course. This site should showcase my hard work over the last year
+to include both front-end and back-end development. This site is written in
+HTML, CSS, JavaScript/jQuery, Python and Django.
 
-## Gitpod Reminders
+### The purpose of this site
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+This site was created as a fully- fledged e-commerce websit , using Stripe's API
+to process the payment side.
 
-`python3 -m http.server`
+### User Stories
 
-A blue button should appear to click: *Expose*,
+> As a user I would like to be able buy natural self care products online rather 
+that the chemical heavy alternatives sold in most high street stores
 
-Another blue button should appear to click: *Open Browser*.
+> I need to an App where I can purchase natural cleaning products for myhousehold as 
+I have a yound child with allergies 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### UX
 
-A blue button should appear to click: *Expose*,
+I wanted to create a simple and intuitive web site which users can browse through
+both shop and blog features with ease. I wanted to use a natural color palatte and 
+the design clean and un-cluttered to allow for a positive user experience 
 
-Another blue button should appear to click: *Open Browser*.
+##Features 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+This site is primarily designed as an ecommerce site but also has a blog feature 
+where only registered users can add a blog post

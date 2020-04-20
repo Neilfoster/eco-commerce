@@ -18,3 +18,13 @@ class ProductTest(TestCase):
         test_product = Product.objects.create(price=10)
         test_formatted_price = test_product.format_price_as_euros()
         self.assertEqual(test_formatted_price, '€10')
+
+    def test_index_template(self):
+        response = self.client.get('/')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed('index.html') 
+    
+    def test_all_household_template(self):
+        response = self.client.get('/all_household')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed('all_household.html') 

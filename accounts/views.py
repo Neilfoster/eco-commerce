@@ -5,6 +5,7 @@ from django.core.urlresolvers import reverse
 from .forms import UserLoginForm, UserRegistrationForm
 from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from .models import Profile
 from django.utils import timezone
 from checkout.models import Order
@@ -61,7 +62,9 @@ def order_list(request):
     Retrieves the order history of the user
     """
     if request.user:
-        order_list = Order.objects.all()
+        order_list = Order.objects.filter(user=request.user)
+        for order in order_list:
+            print(order)
         return render(request, "order_list.html", {'order_list': order_list})
 
 def register(request):
@@ -71,11 +74,11 @@ def register(request):
         if user_form.is_valid():
             user_form.save()
 
-            user = auth.authenticate(request.POST.get('email'),
-                                     password=request.POST.get('password1'))
+            user = auth.authenticate(username=request.POST["username"],
+                                     password=request.POST.get["password1"])
 
             if user:
-                auth.login(request, user)
+                auth.login(user=user, request=request)
                 messages.success(request, "You have successfully registered")
                 return redirect(reverse('index'))
 

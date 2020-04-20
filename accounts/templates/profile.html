@@ -3,6 +3,8 @@
     <h2>User Profile</h2>
     <p>You are logged in as: {{ user.username }} </p>
     {% for p in Profile%}
+    <p>{{ p.profile_pic }} </p>
+    <p>Bio: {{ p.bio }} </p>
     <p>Location: {{ p.location }} </p>
     <p>Birthday:  {{ p.birthdate }} </p>
     {% endfor %}

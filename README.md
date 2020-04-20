@@ -33,3 +33,30 @@ the design clean and un-cluttered to allow for a positive user experience
 
 This site is primarily designed as an ecommerce site but also has a blog feature 
 where only registered users can add a blog post
+
+## Wireframes
+ insert Wireframes here
+
+## Technology Used
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+* [Bootstrap 4](https://getbootstrap.com/)
+* [Javascript](https://www.javascript.com/)
+* [Jquery](https://jquery.com/)
+* [Django 1.11.24](https://docs.djangoproject.com/en/3.0/releases/1.11.24/)
+* [Stripe](https://stripe.com/ie)
+* [Amazon Web Services](https://aws.amazon.com/)
+
+ 
+
+ ##Database Data
+
+## Things I would improve if I had more time
+
+
+##Testing 
+Testing is done using the Django testing framework, continuously integrated by Travis. 
+There is also an extensive list of manual tests, which are included in the TDD folder in the repo.
+
+## Acknowledgements

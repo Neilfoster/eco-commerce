@@ -49,13 +49,20 @@ def login(request):
     args = {'user_form': user_form, 'next': request.GET.get('next', '')}
     return render(request, 'login.html', args)
 
-
 @login_required
 def profile(request):
-    """A view that displays the profile page of a logged in user"""
+    """ A view that displays the profile page of a logged in user """
+    profile = Profile.objects.filter(user=request.user)
+    order_list = Order.objects.filter(user=request.user)
+    args = {'profile': profile, 'order_list': order_list}
+    return render(request, 'profile.html', args)
+"""
+@login_required
+def profile(request):
+  """  """A view that displays the profile page of a logged in user""""""
     profile = Profile.objects.filter(user=request.user)
     return render(request, 'profile.html', {'Profile': profile})
-
+"""
 @login_required
 def order_list(request):
     """
@@ -63,8 +70,6 @@ def order_list(request):
     """
     if request.user:
         order_list = Order.objects.filter(user=request.user)
-        for order in order_list:
-            print(order)
         return render(request, "order_list.html", {'order_list': order_list})
 
 def register(request):

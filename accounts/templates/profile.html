@@ -1,11 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>User Profile</h2>
-    <p>You are logged in as: {{ user.username }} </p>
-    {% for p in Profile%}
-    <p>{{ p.profile_pic }} </p>
-    <p>Bio: {{ p.bio }} </p>
-    <p>Location: {{ p.location }} </p>
-    <p>Birthday:  {{ p.birthdate }} </p>
-    {% endfor %}
+    <div class="row row-flex profile">
+        <h2 class="col-12">{{ user.username }}'s User Profile</h2>
+        <div class="row">
+            <div class="profile-pic col-3" style="background-image: url('{{ MEDIA_URL }}{{ user.profile.profile_pic }}')"></div>
+            <div class="col-9">
+            <p class="col-12">Bio: {{ user.profile.bio }} </p>
+            <p class="col-12">Location: {{ user.profile.location }} </p>
+            <p class="col-12">Birthday:  {{ user.profile.birthdate }} </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row row-flex">
+        <h2 class="col-12">Order History</h2>
+        <p class="col-12">Order Number: {{ user.id }}</p>
+        <p class="col-12"> Order date: {{ order.date }}<p>
+        <h4 class="col-12">Items ordered:</h4>
+        <div class="row">
+        {% for order in order_list %}
+            <p class="col-sm-2 col-md-3">Name: {{ order.full_name }}</p>
+            <p class="col-sm-1 col-md-1">User: {{ order.user }}</p>
+            <p class="col-sm-1 col-md-1">County{{ order_line.county }}</p>
+        </div>
+        <h4>Total:</h4>
+        <p>£{{ order_total }}</p>
+        {% endfor %}
+  </div>
 {% endblock %}

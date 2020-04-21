@@ -236,7 +236,20 @@ form.form-inline {
 #cstm-success a {
     margin:auto;
 }
+/*--------- Profile Page ------*/
 
+.profile-pic{
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width:200px;
+    border: 1px solid #4da73f;
+}
+
+.profile{
+    color:#4da73f;
+}
 /*--------- REGISTER PAGE ------*/
 .form-group {
     margin-top:2%;

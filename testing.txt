@@ -71,6 +71,7 @@ Nádúr MANUAL TESTING
 
 
 5. CART
+
 * Does the badge next to the cart link on the nav bar update when products
  are added to the cart?
     - Yes/Pass
@@ -78,7 +79,22 @@ Nádúr MANUAL TESTING
 * Does the cart display properly on small screens?
     -Yes/Pass
 
-* 
+* Does the quantity item ajust when updated?
+    -Yes/Pass
+
+* Does the total add up correctly?
+    -Yes/Pass
+
+* Does the text display as expected on all screen sizes?
+    -Yes/Pass
+
+* Does the checkout button darken when hovered over?
+    -Yes/Pass
+
+* Does the checkout button redirect to the checkout page?
+    -Yes/Pass
+
+
 
 6. CHECKOUT
 

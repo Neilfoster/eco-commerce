@@ -55,7 +55,7 @@ where only registered users can add a blog post
 ## Things I would improve if I had more time
 
 
-##Testing 
+## Testing 
 Testing is done using the Django testing framework, continuously integrated by Travis. 
 There is also an extensive list of manual tests, which are included in the TDD folder in the repo.
 

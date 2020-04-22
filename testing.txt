@@ -1,0 +1,89 @@
+Nádúr MANUAL TESTING
+
+1. NAVIGATION
+
+* Do the navagation link change brightness when hovered over?
+  - Yes/Pass
+
+* Does the navigation menu collapse when the screen is under a certain size?
+   - Yes/Pass
+
+* Do the FontAwesome icons appear on all major browsers?
+   - Yes/Pass
+
+* Does the list links in the differ according to the logged in/ logged out status
+    of the user?
+   - Yes/Pass
+
+* Does the brand logo link return to the index page?
+    -Yes/Pass
+
+
+2. RESPONSIVENESS
+
+* Does the layout change in accordance with Bootsraps column system
+    -Yes/Pass
+
+* Do different section links stack on top of each other when viewed on small screens?
+    -Yes/Pass
+
+* Does the custom font for headlines spill over the edge of the screen when scaled down?
+   - No/Pass
+
+* Is all text and links legible when viewed on small screens?
+    - Yes/Pass
+
+* Does Image size scale for small screens?
+    - Yes/Pass
+
+3. INDEX PAGE
+ 
+* Does the carousel slide through 3 different images?
+    -Yes/Pass
+
+* Does the household product button navigate to the household product page?
+    -Yes/Pass
+
+* Does the self-care product button navigate to the self-care product page?
+    -Yes/Pass
+
+* Does the blog button navigate to the blog post page?
+    -Yes/Pass
+
+* Do all buttons grow and lighten in colour when hovered over?
+    -Yes/Pass
+
+4. ACCOUNTS
+
+* Does the ability to register with the site work correctly when the form is filled out entirely
+   and with unique credentials?
+   - Yes/Pass
+
+* Does the ability to login to an account work when provided the correct credentials?
+   - Yes/Pass
+
+* Does the ability to login work when provided the incorrect credentials?
+   - No/Pass
+
+* Does the user have the ability to register a new account while already logged in?
+   - No/Pass
+
+
+
+5. CART
+* Does the badge next to the cart link on the nav bar update when products
+ are added to the cart?
+    - Yes/Pass
+
+* Does the cart display properly on small screens?
+    -Yes/Pass
+
+* 
+
+6. CHECKOUT
+
+7. PRODUCTS
+
+8. BLOG
+
+9. DATABASE

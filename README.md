@@ -1,8 +1,8 @@
-# Eco Clean | Milestone Project 4
+# Nádúr | Milestone Project 4
 
 ### Why I made this site
 
-Eco Clean is an App that allows users to buy natural Eco friendly cleaning 
+Nádúr is an App that allows users to buy natural Eco friendly cleaning 
 and self care products as an alternative to the chemical heavy versions sold in
 most supermarkets and stores. 
 This is my final project at the end of [Code Institute's](https://codeinstitute.net/) Full
@@ -57,6 +57,6 @@ where only registered users can add a blog post
 
 ## Testing 
 Testing is done using the Django testing framework, continuously integrated by Travis. 
-There is also an extensive list of manual tests, which are included in the TDD folder in the repo.
+There is also an extensive list of manual tests, which are included in the testing.txt folder in the repo.
 
 ## Acknowledgements

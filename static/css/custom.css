@@ -10,6 +10,7 @@ body {
 
 .nav_txt {
   font-family: 'Dosis';
+  font-size: 2rem;
 }
 
 .nav-item a {
@@ -51,8 +52,15 @@ body {
 
 .card-title{
     text-align: center;
+    font-family: 'Dosis';
+    color: #406730;
+    font-size:1.6rem;
 }
 
+.card-text {
+    font-family: 'raleway';
+    font-size:1.1rem;
+}
 .cstm-btn a {
     color: white;
     text-decoration: none;
@@ -65,11 +73,29 @@ body {
 
 .lndg-card  {
     text-align: center;
+    
 }
 
 .lndg-card p {
     text-align: left;
+    color: #6b736b;
+
 }
+
+.heading-txt {
+    font-family: 'Dosis';
+    margin: auto;
+    text-align: center;
+    color: #406730;
+}
+
+.sub-heading-txt {
+    font-family: 'Dosis';
+    margin: auto;
+    text-align: center;
+    color: #6b736b;
+}
+
 /*---------Product display page-------- */
 
 .cstm-product{
@@ -145,9 +171,15 @@ body {
 }
 
 #blog-head {
-    color:#5da73f;
     margin-top:5%;
+    font-family: 'Dosis';
+    color: #406730;
 
+}
+
+.blog-text {
+    font-family: 'raleway';
+    font-size:1.2rem;
 }
 
 .blog-form {
@@ -258,6 +290,10 @@ form.form-inline {
 .form-group a {
     color:#5da73f;
 }
+/* -------- Password Reset ------------*/
+.password-head{
+    margin-top:5%;
+}
 
 /* -------- FOOTER ------------*/
 
@@ -279,6 +315,10 @@ form.form-inline {
     font-family: 'Dosis';
     margin-top: 1%;
     text-align: center;
+}
+
+#foot-head {
+    margin-top:1%;
 }
 
 .cstm-foot ul li  {

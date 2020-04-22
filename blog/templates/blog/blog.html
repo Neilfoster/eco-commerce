@@ -6,9 +6,9 @@
         <div class="col-12 display panel panel-default">
             <div class="panel-body cstm-product">
                 <div class="blog-img" style="background-image: url('{{ MEDIA_URL }}{{ item.image }}')"></div>
-                <h3>{{ item.headline }}</h3>
-                <p>{{ item.author }}</p>
-                <p>{{ item.blog_text }}</p>
+                <h3 id="blog-head">{{ item.headline }}</h3>
+                <p class="blog-text">Author: {{ item.author }}</p>
+                <p class="blog-text">{{ item.blog_text }}</p>
             </div>
         </div>
     {% endfor %}

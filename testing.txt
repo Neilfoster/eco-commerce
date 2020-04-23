@@ -36,6 +36,7 @@ Nádúr MANUAL TESTING
 * Does Image size scale for small screens?
     - Yes/Pass
 
+
 3. INDEX PAGE
  
 * Does the carousel slide through 3 different images?
@@ -98,8 +99,96 @@ Nádúr MANUAL TESTING
 
 6. CHECKOUT
 
+* Does the checkout page display properly?
+    -Yes/Pass
+
+* Does the bootstrap form display as expected?
+    -Yes/Pass
+
+* Does the layout scale properly for small screens?
+    -Yes/Pass
+
+* Does the cart total add up properly?
+    -Yes/Pass
+
+* Does the number of items display properly?
+    -Yes/Pass
+
+* Does the form validation allow required fields to be left blank or empty?
+    -Yes/Pass
+
+* If all valid does the form submit successfully?
+    -Yes/Pass
+
+* Does the site redirect to the 'Order Successfull' page when the order has 
+  been cmopleted?
+    -Yes/Pass
+
+* Does the cart successfully empty itself when the payment process has been completed?
+    -Yes/Pass
+
+* Does the badge next to the cart link in the nav bar empty when the order has 
+  been completed?
+    -Yes/Pass
+
 7. PRODUCTS
 
+* Do the products sit next to each other on medium and large screen sizes?
+    -Yes/Pass
+
+* Do the products stack on top of each other one by one on small screen sizes?
+    -Yes/Pass
+
+* Do only the household products show when brought to the page from household button?
+    -Yes/Pass
+
+* Do only the selfcare products show when brought to the page from selfcare button?
+    -Yes/Pass
+
+* Do all products show when brought to the page from the shop link on the navingation bar?
+    -Yes/Pass
+
+* Does the euro symbol show in the price?
+    -Yes/Pass
+
+* Does the adjust number input work as expected?
+    -Yes/Pass
+
+* Does the "Add to Cart" button add products to cart as expected?
+    -Yes/Pass
+
+* Are there any issues, overlapping or incorrect Bootstrap columns at ANY screen size?
+   - No/Pass
+
 8. BLOG
+ * Do blog entries display correctly on all screen sizes? 
+    -Yes/Pass
+
+* Do the images render as expected?
+    -Yes/Pass
+
+* Does the the Make Blog Entry Button grow when hovered over?
+    -Yes/Pass
+
+* Does the Make Blog Entry Button bring users to the create blog function when logged in ?
+    -Yes/Pass
+
+* Does the Blog Entry Button bring users to the login page if not logged in?
+    -Yes/Pass
+
+* Does the Create a Blog Entry form display as expected?
+    -Yes/Pass
+
+* Does the form overlap on small screen sizes?
+    -No/Pass
+
+* Does the blog entry a user created display as expected and get added to the site?
+    -Yes/Pass
+
+* Does the Create button grow when hovered over? 
+    -Yes/Pass
+
 
 9. DATABASE
+
+10. PROFILE 

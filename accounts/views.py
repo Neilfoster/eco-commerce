@@ -56,21 +56,8 @@ def profile(request):
     order_list = Order.objects.filter(user=request.user)
     args = {'profile': profile, 'order_list': order_list}
     return render(request, 'profile.html', args)
-"""
-@login_required
-def profile(request):
-  """  """A view that displays the profile page of a logged in user""""""
-    profile = Profile.objects.filter(user=request.user)
-    return render(request, 'profile.html', {'Profile': profile})
-"""
-@login_required
-def order_list(request):
-    """
-    Retrieves the order history of the user
-    """
-    if request.user:
-        order_list = Order.objects.filter(user=request.user)
-        return render(request, "order_list.html", {'order_list': order_list})
+
+
 
 def register(request):
     """A view that manages the registration form"""

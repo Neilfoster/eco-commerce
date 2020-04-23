@@ -25,6 +25,16 @@ class ProductTest(TestCase):
         self.assertTemplateUsed('index.html') 
     
     def test_all_household_template(self):
-        response = self.client.get('/products/all_household')
+        response = self.client.get("/products/all_household", follow=True)
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed('all_household.html')
+
+    def test_all_selfcare_template(self):
+        response = self.client.get("/products/all_selfcare", follow=True)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed('all_selfcare.html')
+
+    def test_all_products_template(self):
+        response = self.client.get("/products/all_products", follow=True)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed('all_products.html')

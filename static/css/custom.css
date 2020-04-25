@@ -4,7 +4,7 @@ body {
 
 /*-------- Navbar -------*/
 .cstm-nav {
-  background-color:#5da740;
+  background-color:#406730;
 
 }
 
@@ -22,7 +22,7 @@ body {
 
   .badge {
       background-color:white;
-      color:#4da73f;
+      color:#406730;
   }
 
 /*-------- index page card display button --------*/
@@ -36,7 +36,7 @@ body {
   font-size: 12px;
   letter-spacing: 0.1em;
   color: #ffffff;
-  background-color: #5da73f;
+  background-color: #406730;
   outline: none;
   transition-duration: 1s;
 }
@@ -120,7 +120,7 @@ body {
 }
 
 .panel-body {
-    border: 2px solid #5da73f;
+    border: 2px solid #406730;
     border-radius: 5%;
     padding:5%;
     margin-bottom:3%;
@@ -129,7 +129,7 @@ body {
 .panel-body h3 {
     margin-top:3%;
     text-align: center;
-    color: #5da73f;
+    color: ##406730;
 }
 
 .product-description {
@@ -142,7 +142,7 @@ body {
 .product-price {
     text-align:right;
     font-size:1.5rem;
-    color:#4da73f;
+    color:#406730;
 }
 
 .product {
@@ -199,17 +199,17 @@ body {
 .checkout-head {
     margin-top: 5%;
     padding-bottom:5%;
-    color:#4da73f;
-    border-bottom: 1px solid #4da73f;
+    color:#406730;
+    border-bottom: 1px solid #406730;
 }
 
 #payment-head {
-    color:#4da73f;
+    color:#406730;
     font-size: 2rem;
 }
 .checkout-itm {
     padding:5%;
-    border-bottom: 1px solid #b7bfb9;
+    border-bottom: 1px solid #406730;
 }
 
 .check-bx {
@@ -217,25 +217,25 @@ body {
 }
 
 .check-total p {
-  color:#5da73f;
+  color:#406730;
   padding:1%;
   text-align: right;
 }
 
 .row p.check-total{
-    color:#5da73f;
+    color:#406730;
     padding-right:3%;
     padding-top:2%;
 }
 input.adjust-bx {
     height:5%;
-    border: 1px solid #5da73f;
+    border: 1px solid #406730;
     border-radius:10%;
     margin-right:4%;
 }
 
 button.amend-btn{
-    background-color:#5da73f;
+    background-color:##406730;
     color: white;
     border-radius:10%;
     padding:2%;
@@ -250,7 +250,7 @@ button.amend-btn{
 }
 
 .check-qty {
-    color:#5da73f;
+    color:#406730;
 }
 
 .input-group {
@@ -276,11 +276,12 @@ form.form-inline {
     background-repeat: no-repeat;
     height: 200px;
     width:200px;
-    border: 1px solid #4da73f;
+    border: 1px solid #406730;
 }
 
 .profile{
     color:#4da73f;
+    margin-bottom:500px;
 }
 /*--------- REGISTER PAGE ------*/
 .form-group {
@@ -299,7 +300,7 @@ form.form-inline {
 
 .cstm-foot {
   background-color: rgba(0,0,0,.075);
-  color: #5da740;
+  color: #406730;
   max-height: 1%;
   padding-top: 2;
   text-align:center;
@@ -339,7 +340,7 @@ form.form-inline {
 }
 
 .cstm-social ul li a {
-  color:  #5da740;
+  color:  #406730;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
 }
@@ -367,5 +368,9 @@ form.form-inline {
 
 .cstm-contact i {
     margin-right:3%;
-    color: #5da740;
+    color: #406730;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
 }

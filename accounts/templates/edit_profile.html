@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load bootstrap_tags %}
+
+{% block content %}
+<div class="create_blog">
+    <h2 id="blog-head">Edit Profile</h2>
+    <form class="blog-form" action="{% url 'create_blog' %}" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+{{ form | as_bootstrap }}
+        <input class="cstm-btn blog-btn" type="submit" value="Submit">
+    </form>
+</div>
+
+{% endblock%}

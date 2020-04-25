@@ -1,14 +1,15 @@
-from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, HttpResponseRedirect
 from django.contrib import messages, auth
 from django.core.urlresolvers import reverse
-from .forms import UserLoginForm, UserRegistrationForm
+from .forms import UserLoginForm, UserRegistrationForm, EditProfileForm
 from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from .models import Profile
 from django.utils import timezone
+from django.contrib.auth.forms import UserChangeForm
 from checkout.models import Order
+from . import forms
 
 
 # Create your views here.
@@ -53,11 +54,24 @@ def login(request):
 def profile(request):
     """ A view that displays the profile page of a logged in user """
     profile = Profile.objects.filter(user=request.user)
-    order_list = Order.objects.filter(user=request.user)
-    args = {'profile': profile, 'order_list': order_list}
+    order = Order.objects.filter(user=request.user)
+    args = {'profile': profile, 'order': order}
     return render(request, 'profile.html', args)
 
 
+@login_required(login_url="/accounts/login")
+def edit_profile(request):
+    if request.method == 'POST':
+        form = forms.EditProfileForm(request.POST, request.FILES)
+        profile = Profile.objects.all()
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.author = request.user
+            instance.save()
+            return render(request, "profile.html", {'profile': profile})
+    else:
+        form = forms.EditProfileForm()
+    return render(request, 'edit_profile.html', {'form': form})
 
 def register(request):
     """A view that manages the registration form"""

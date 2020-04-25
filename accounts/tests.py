@@ -2,6 +2,7 @@ from django.test import TestCase
 from django.contrib.auth.models import User
 from accounts.forms import UserRegistrationForm, UserLoginForm
 
+
 class AccountsFormsTests(TestCase):
 
     def test_valid_user_registration_form(self):
@@ -13,9 +14,16 @@ class AccountsFormsTests(TestCase):
         })
 
         self.assertTrue(form.is_valid())
-    
-    
+  
     def test_login_template(self):
         response = self.client.get("/accounts/login", follow=True)
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed('login.html')
+
+    def test_valid_login_form(self):
+        form = UserLoginForm({
+            'username_or_email': 'mike-d',
+            'password': 'wizard-1',
+        })
+
+        self.assertTrue(form.is_valid())

@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Neilfoster/eco-commerce.svg?branch=master)](https://travis-ci.org/Neilfoster/eco-commerce)
+
 # Nádúr | Milestone Project 4
 
 ### Why I made this site

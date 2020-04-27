@@ -24,10 +24,10 @@
          {% if user.is_authenticated %}
                 <li class="nav-item ">
                     <a class="nav-link" href="{% url 'index' %}">
-                    <i class="fas fa-home"></i>Home</a>
+                    <i class="fas fa-home fa-fw"></i>Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'blog' %}">
+                    <a class="nav-link spacer" href="{% url 'blog' %}">
                     <i class="fas fa-blog"></i>Blog</a>
                 </li>
                 <li class="nav-item">

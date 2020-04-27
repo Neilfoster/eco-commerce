@@ -20,10 +20,14 @@ body {
   color: yellow;
   }
 
-  .badge {
+.badge {
       background-color:white;
       color:#406730;
   }
+
+ .spacer li a {
+    margin-right: 10%;
+}
 
 /*-------- index page card display button --------*/
 .cstm-btn {
@@ -369,8 +373,4 @@ form.form-inline {
 .cstm-contact i {
     margin-right:3%;
     color: #406730;
-}
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  
 }

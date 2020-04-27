@@ -24,27 +24,27 @@
          {% if user.is_authenticated %}
                 <li class="nav-item ">
                     <a class="nav-link" href="{% url 'index' %}">
-                    <i class="fas fa-home fa-fw"></i>Home</a>
+                    <i class="fas fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link spacer" href="{% url 'blog' %}">
-                    <i class="fas fa-blog"></i>Blog</a>
+                    <a class="nav-link" href="{% url 'blog' %}">
+                    <i class="fas fa-blog"></i> Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'products' %}">
-                    <i class="fas fa-store"></i>Shop</a>
+                    <i class="fas fa-store"></i> Shop</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'profile' %}">
-                    <i class="fas fa-user"></i>Profile</a>
+                    <i class="fas fa-user"></i> Profile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">
-                    <i class="fas fa-sign-out-alt"></i>Logout</a>
+                    <i class="fas fa-sign-out-alt"></i> Logout</a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'view_cart' %}" class="nav-link">
-                        <i class="fas fa-shopping-cart"></i>Cart
+                        <i class="fas fa-shopping-cart"></i> Cart
             {% if product_count > 0 %}
                         <label class="badge badge-warning">{{ product_count}}</label>
             {% endif %}
@@ -53,27 +53,27 @@
           {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'index' %}">
-                    <i class="fas fa-home"></i>Home</a>
+                    <i class="fas fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'blog' %}">
-                    <i class="fas fa-blog"></i>Blog</a>
+                    <i class="fas fa-blog"></i> Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'products' %}">
-                    <i class="fas fa-store"></i>Shop</a>
+                    <i class="fas fa-store"></i> Shop</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'register' %}">
-                    <i class="fas fa-pen"></i>Register</a>
+                    <i class="fas fa-pen"></i> Register</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'login' %}">
-                    <i class="fas fa-sign-in-alt"></i>Log In</a>
+                    <i class="fas fa-sign-in-alt"></i> Log In</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'view_cart' %}">
-                    <i class="fas fa-shopping-cart"></i>Cart</a>
+                    <i class="fas fa-shopping-cart"></i> Cart</a>
                 </li>
           {% endif %}
             </ul>

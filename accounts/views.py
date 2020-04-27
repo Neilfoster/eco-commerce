@@ -6,8 +6,6 @@ from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from .models import Profile
-from django.utils import timezone
-from django.contrib.auth.forms import UserChangeForm
 from checkout.models import Order
 from . import forms
 
@@ -81,7 +79,7 @@ def register(request):
             user_form.save()
 
             user = auth.authenticate(username=request.POST["username"],
-                                     password=request.POST.get["password1"])
+                                     password=request.POST.get("password1"))
 
             if user:
                 auth.login(user=user, request=request)

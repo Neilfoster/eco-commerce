@@ -121,8 +121,7 @@ body {
 }
 
 .panel-body {
-    border: 2px solid #406730;
-    border-radius: 5%;
+    border: 2px solid #d1d4cf;
     padding:5%;
     margin-bottom:3%;
 }
@@ -140,7 +139,8 @@ body {
 
 .product-category{
     text-align: center;
-    color:blue;
+    color:#a6b3a6;
+    font-family: 'raleway';
 }
 
 .product-price {

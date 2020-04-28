@@ -8,6 +8,16 @@
             <p class="col-12">Bio: {{ user.profile.bio }} </p>
             <p class="col-12">Location: {{ user.profile.location }} </p>
             <p class="col-12">Birthday:  {{ user.profile.birthdate }} </p>
+            <h2 class="order-head">Order History</h2> 
+            <hr>
+            {% for order in orders %}
+               <p class="order-item"><b> {{ order.date }}</b> </p>
+            <br>
+                {% for lineitem in order.orderlineitems.all %}
+                   <p class="order-item">{{ lineitem.product }}: {{ lineitem.quantity }}</p>
+                {% endfor %}
+            <br><hr><br>
+            {% endfor %}
             <button type="button" class="cstm-btn col-12"><a href="{% url 'edit_profile' %}">Edit Profile</a></button>
             </div>
         </div>

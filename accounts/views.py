@@ -6,7 +6,7 @@ from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from .models import Profile
-from checkout.models import Order
+from checkout.models import Order, OrderLineItem
 from . import forms
 
 
@@ -51,16 +51,15 @@ def login(request):
 @login_required
 def profile(request):
     """ A view that displays the profile page of a logged in user """
-    profile = Profile.objects.filter(user=request.user)
-    order = Order.objects.filter(user=request.user)
-    args = {'profile': profile, 'order': order}
+    orders = request.user.orders.all()
+    args = {'profile': profile, 'orders': orders}
     return render(request, 'profile.html', args)
-
-
+    
+    
 @login_required(login_url="/accounts/login")
 def edit_profile(request):
     if request.method == 'POST':
-        form = forms.EditProfileForm(request.POST, request.FILES)
+        form = EditProfileForm(request.POST, request.FILES)
         profile = Profile.objects.all()
         if form.is_valid():
             instance = form.save(commit=False)

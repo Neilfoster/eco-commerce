@@ -290,6 +290,11 @@ form.form-inline {
 .profile{
     color:#4da73f;
     margin-bottom:500px;
+    font-family: 'raleway';
+}
+
+.order-item {
+    color: #000000;
 }
 
 /*--------- REGISTER PAGE ------*/
@@ -301,9 +306,13 @@ form.form-inline {
     color:#5da73f;
 }
 
+.page-head {
+    padding-top:2%;
+}
+
 /* -------- Password Reset ------------*/
 .password-head{
-    margin-top:5%;
+    padding-top:5%;
 }
 
 /* -------- FOOTER ------------*/
@@ -314,7 +323,11 @@ form.form-inline {
   max-height: 1%;
   padding-top: 2;
   text-align:center;
-}
+  /*position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; */
+  }
 
 .cstm-foot p {
   font-size: 0.8rem;

@@ -1,12 +1,11 @@
 from django.db import models
-from accounts.models import Profile
 from products.models import Product
 from django.contrib.auth.models import User
 
 
 # Create your models here.
 class Order(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, related_name="orders")
     full_name = models.CharField(max_length=70, blank=False)
     phone_number = models.CharField(max_length=20, blank=False)
     country = models.CharField(max_length=40, blank=False)
@@ -22,7 +21,7 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
-    order = models.ForeignKey(Order, null=False)
+    order = models.ForeignKey(Order, null=False, related_name="orderlineitems")
     product = models.ForeignKey(Product, null=False)
     quantity = models.IntegerField(blank=False)
 

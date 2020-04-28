@@ -62,6 +62,7 @@ def checkout(request):
     return render(request, "checkout/checkout.html", {"order_form": order_form, "payment_form": payment_form, "publishable": settings.STRIPE_PUBLISHABLE})
 
 
+
 def success(request):
     """ Returns Success message when payment is successful"""
     return render(request, "checkout/success.html")

@@ -12,7 +12,8 @@
             </div>
         </div>
     {% endfor %}
-        <button type="submit" class="cstm-btn blog-btn"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span><a href="{% url 'create_blog' %}">Make Blog Entry</a></button>
+        
+        <a href="{% url 'create_blog' %}" class="cstm-btn"> Make Blog Entry</a>
 </div>
 
 {% endblock %}

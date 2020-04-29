@@ -2,193 +2,350 @@ Nádúr MANUAL TESTING
 
 1. NAVIGATION
 
-* Do the navagation link change brightness when hovered over?
-  - Yes/Pass
+* Navagation link test.
+  The navagation link should change brightness when hovered over.
+  Result:
+    - Yes/Pass
 
-* Does the navigation menu collapse when the screen is under a certain size?
+* Navagation link responsive test. 
+  The navigation menu should collapse when the screen is under a certain size.
+   Result:
    - Yes/Pass
 
-* Do the FontAwesome icons appear on all major browsers?
+* Fontawesome icon test.
+  The FontAwesome icons should appear on all major browsers
+   Result:
    - Yes/Pass
 
-* Does the list links in the differ according to the logged in/ logged out status
-    of the user?
+* Logged in status on navigation bar test. 
+  The list links should include the log out option if the user is logged in.
+  Result:
    - Yes/Pass
 
-* Does the brand logo link return to the index page?
+* Logged out status on navigation bar test. 
+  The list links should include Log in and Register options if the user is logged out.
+  Result: 
+   - Yes/Pass
+
+* Brand Logo test. 
+  The brand logo link should return to the index page when clicked.
+  Result: 
     -Yes/Pass
 
 
 2. RESPONSIVENESS
 
-* Does the layout change in accordance with Bootsraps column system
+* Layout test. 
+  The layout should change in accordance with Bootsraps column system.
+  Result:
+   -Yes/Pass
+
+* Section link test. 
+  Different section links should stack on top of each other when viewed on small screens.
+  Result:
     -Yes/Pass
 
-* Do different section links stack on top of each other when viewed on small screens?
-    -Yes/Pass
-
-* Does the custom font for headlines spill over the edge of the screen when scaled down?
+* Custom Font test. 
+  The custom font for headlines should not spill over the edge of the screen when scaled down.
+  Result:
    - No/Pass
 
-* Is all text and links legible when viewed on small screens?
+* Legibiltiy test. 
+  All text and links should be legible when viewed on small screens.
+  Result: 
     - Yes/Pass
 
-* Does Image size scale for small screens?
+* Image Size test. 
+ The image size should scale for small screens.
+ Result: 
     - Yes/Pass
 
 
 3. INDEX PAGE
  
-* Does the carousel slide through 3 different images?
+* Carousel test.
+  The carousel should slide through 3 different images in a continuous loop.
+  Result:
     -Yes/Pass
 
-* Does the household product button navigate to the household product page?
+* Household product button test.
+  The household product button should navigate to the household product page when clicked.
+  Result:  
     -Yes/Pass
 
-* Does the self-care product button navigate to the self-care product page?
+* Selfcare product button test.
+  The selfcare product button should navigate to the selfcare product page when clicked.
+  Result:
     -Yes/Pass
 
-* Does the blog button navigate to the blog post page?
+* Blog button test.  
+  The blog button should navigate to the blog post page.
+  Result:  
     -Yes/Pass
 
-* Do all buttons grow and lighten in colour when hovered over?
+* Button test  
+  All buttons should grow and lighten in colour when hovered over.
+  Result: 
     -Yes/Pass
+
 
 4. ACCOUNTS
 
-* Does the ability to register with the site work correctly when the form is filled out entirely
-   and with unique credentials?
+* Register form test.  
+  The user should be able to register with the site work correctly when the form is filled out entirely
+   and with unique credentials.
+   Result:
    - Yes/Pass
 
-* Does the ability to login to an account work when provided the correct credentials?
+* Login test. 
+  The user should be able to login to an account work when provided the correct credentials?
+   Result:
    - Yes/Pass
 
-* Does the ability to login work when provided the incorrect credentials?
+* Incorrect login test.
+  The user should not be able to log in when using the incorrect credentials.
+  Result:
    - No/Pass
 
-* Does the user have the ability to register a new account while already logged in?
+* Existing user create new account test. 
+  The user should not be able to register a new account while already logged in.
+  Result:
    - No/Pass
 
 
 
 5. CART
 
-* Does the badge next to the cart link on the nav bar update when products
- are added to the cart?
+* Cart badge test. 
+  The badge next to the cart link on the nav bar should update 
+  when products are added to the cart.
+  Result:  
     - Yes/Pass
 
-* Does the cart display properly on small screens?
+* Cart display test. 
+  The cart should display properly on small screen sizes.
+  Result: 
     -Yes/Pass
 
-* Does the quantity item ajust when updated?
+* Cart quantity test. 
+  The cart icon should display the correct quantity when updated.
+  Result:  
     -Yes/Pass
 
-* Does the total add up correctly?
+* Cart total test. 
+  The total of the cart should display the correct figure.
+  Result:
     -Yes/Pass
 
-* Does the text display as expected on all screen sizes?
+* Test display test.
+  The text display should be clear and legible on all screen sizes?
+  Result:  
     -Yes/Pass
 
-* Does the checkout button darken when hovered over?
+* Checkout button test. 
+  The checkout button should darken when hovered over?
+  Result:  
     -Yes/Pass
 
-* Does the checkout button redirect to the checkout page?
+* Checkout button redirect test. 
+  The checkout button should redirect to the checkout page when clicked.
+  Result: 
     -Yes/Pass
 
 
 
 6. CHECKOUT
 
-* Does the checkout page display properly?
+* Checkout page display test. 
+  The checkout page should display as expected.
+  Result:
     -Yes/Pass
 
-* Does the bootstrap form display as expected?
+* Bootstrap form test.  
+  The bootstrap form should display clearly and as expected.
+  Result:
     -Yes/Pass
 
-* Does the layout scale properly for small screens?
+* Checkout layout test.
+  The layout of the checkout page should scale properly for small screens.
+  Result:
     -Yes/Pass
 
-* Does the cart total add up properly?
+* Cart total test. 
+  The cart total of the items in the cart should add up properly.
+  Result:
     -Yes/Pass
 
-* Does the number of items display properly?
+* Item number display test.
+  The number of items should display properly.
+  Result:
     -Yes/Pass
 
-* Does the form validation allow required fields to be left blank or empty?
+* Form validation test.  
+  The form validation should not allow required fields to be left blank or empty.
+  Result:
     -Yes/Pass
 
-* If all valid does the form submit successfully?
+* Form submission test. 
+  Valid form should submit successfully when completed.
+  Result:
     -Yes/Pass
 
-* Does the site redirect to the 'Order Successfull' page when the order has 
-  been cmopleted?
+* Order successfull test 
+  The site should redirect to the 'Order Successfull' page when the order has 
+  been completed.
+  Result:
     -Yes/Pass
 
-* Does the cart successfully empty itself when the payment process has been completed?
+* Cart empty upon payment test.
+  The cart should successfully empty itself when the payment process has been completed.
+  Result:
     -Yes/Pass
 
-* Does the badge next to the cart link in the nav bar empty when the order has 
-  been completed?
+* Badge empty test.
+  The badge next to the cart link in the nav bar should empty when the order has 
+  been completed.
+  Result:
     -Yes/Pass
+
 
 7. PRODUCTS
 
-* Do the products sit next to each other on medium and large screen sizes?
+* Large and medium screen product test. 
+  The products should sit next to each other on medium and large screen sizes.
+  Result:
     -Yes/Pass
 
-* Do the products stack on top of each other one by one on small screen sizes?
+* Small screen product test. 
+  The products should stack on top of each other one by one on small screen sizes.
+  Result:
     -Yes/Pass
 
-* Do only the household products show when brought to the page from household button?
+* Household product test. 
+  Only the household products should show when brought to the page from household button.
+  Result:
     -Yes/Pass
 
-* Do only the selfcare products show when brought to the page from selfcare button?
+* Selfcare product test. 
+  Only the selfcare products should show when brought to the page from selfcare button.
+  Result:
     -Yes/Pass
 
-* Do all products show when brought to the page from the shop link on the navingation bar?
+* All products test. 
+  All products should show when brought to the page from the shop link on the navingation bar.
+  Result:
     -Yes/Pass
 
-* Does the euro symbol show in the price?
+* Euro symbol test 
+  The euro symbol should show in the price.
+  Result: 
     -Yes/Pass
 
-* Does the adjust number input work as expected?
+* Ajust quantity test. 
+  The adjust number input should ajust the quantity as expected?
+  Result: 
     -Yes/Pass
 
-* Does the "Add to Cart" button add products to cart as expected?
+* Add to cart button test.
+  The "Add to Cart" button should add products to the cart.
+  Result:
     -Yes/Pass
 
-* Are there any issues, overlapping or incorrect Bootstrap columns at ANY screen size?
+* overlapping test test.
+  There should be no issues, overlapping or incorrect Bootstrap columns on ANY screen size.
+  Result:
    - No/Pass
 
+
 8. BLOG
- * Do blog entries display correctly on all screen sizes? 
+
+* Blog entry test.
+  the blog entries shoul display correctly on all screen sizes.
+  Result:
     -Yes/Pass
 
-* Do the images render as expected?
+* Image render test. 
+  The blog images should display and render as expected.
+  Result:
     -Yes/Pass
 
-* Does the the Make Blog Entry Button grow when hovered over?
+* Make blog entry button test. 
+  The Make Blog Entry Button should grow when hovered over.
+  Result:
     -Yes/Pass
 
-* Does the Make Blog Entry Button bring users to the create blog function when logged in ?
+* Logged in make blog entry button test.
+  The Make Blog Entry Button should bring users to the create blog function when logged in.
+  Result:
     -Yes/Pass
 
-* Does the Blog Entry Button bring users to the login page if not logged in?
+* Logged out make blog entry button test. 
+  The Blog Entry Button should bring users to the login page if not logged in.
     -Yes/Pass
 
-* Does the Create a Blog Entry form display as expected?
+* Blog entry form.
+  the Create a Blog Entry form should display as expected.
+  Result: 
     -Yes/Pass
 
-* Does the form overlap on small screen sizes?
-    -No/Pass
-
-* Does the blog entry a user created display as expected and get added to the site?
+* Overlapping form test. 
+  The form should not overlap on small screen sizes.
     -Yes/Pass
 
-* Does the Create button grow when hovered over? 
+* Blog entry form filled out test 
+  The blog entry a user created should display as expected and get added to the site.
+  Result:
+    -Yes/Pass
+
+* Create button test.
+  The Create button should grow when hovered over? 
+  Result:
     -Yes/Pass
 
 
 9. DATABASE
 
-10. PROFILE 
+* Database test for User.
+  The Database should update as users information when they set up an account.
+  Result:
+    -Yes/Pass
+
+* Order history test.
+  The users order history should be stored on the database when orders are payed for
+  Result:
+    -Yes/Pass
+
+* Postgres database test.
+  The database should load and function correctly via postgres when used live
+  Result:
+    -Yes/Pass
+
+10. HISTORY
+
+* Testing the users history page.
+  The order history of the signed in user should display correctly when logged in.
+  Result:
+    Yes/Pass
+
+* Testing the history page on different screen sizes.
+  Text and order history should scale correctly for different screen sizes.
+  Result:
+    Yes/Pass
+
+* Testing the page shows the correct user name.
+  The page should display the logged in users name at the top of the history page.
+  Result:
+    Yes/Pass
+
+11. MISCELLANEOUS
+
+* Test for AWS S3
+  All media files should upload to AWS's S3 when added on the site by a user.
+  Result:
+  Yes/Pass
+
+* Test for static files on S3.
+  S3 should serve all of the sites Static files successfully.
+  Result:
+  Yes/Pass
+

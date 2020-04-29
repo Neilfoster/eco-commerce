@@ -29,7 +29,7 @@ I have a yound child with allergies
 
 I wanted to create a simple and intuitive web site which users can browse through
 both shop and blog features with ease. I wanted to use a natural color palatte and 
-the design clean and un-cluttered to allow for a positive user experience 
+the design clean and un-cluttered to allow for a positive user experience. 
 
 ## Features 
 
@@ -56,13 +56,15 @@ where only registered users can add a blog post
 
 
 ## Things I would improve if I had more time
-
+I would have liked to create a market place for independent makers of any selfcare or household products
+to sell their products. This could be then intergrated into their profile page and could be reviewed by
+other users via a rating system. 
 
 ## Testing 
 Testing is done using the Django testing framework, continuously integrated by Travis. 
 There is also an extensive list of manual tests, which are included in the testing.txt folder in the repo.
 
-## HTML & CSS
+### HTML & CSS
 All my HTML and CSS are valid and checked with the following validators:
 
 * [HTML Validator](https://validator.w3.org/)
@@ -80,10 +82,14 @@ Getting my application ready for deployment included the following steps :
 * Pushing all my latest code to GitHub ready for deployment via Heroku's GitHub function
     where you can deploy from GitHub to the app.
 
-### When you deploy your app successfully Heroku will give you the URL where your app is hosted
+* When you deploy your app successfully Heroku will give you the URL where your app is hosted
 
 * If your deployment in unsuccessful Heroku will log the cause of the error , which you can
     see in the 'view log ' section on the Heroku site. Here you can find a detailed view of what 
     has caused your application not to work successfully.
 
 ## Acknowledgements
+ I would like to give a huge thanks to my mentor Brian Macharia who helped me so much in getting 
+ through this project while a huge global pandemic was taking part in the background. Also a 
+ massive thank you to all the Code Institute's student support team who helped me so many times 
+ to understand some of the concepts I had been stuck on .

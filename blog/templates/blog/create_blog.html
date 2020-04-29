@@ -7,7 +7,7 @@
     <form class="blog-form" action="{% url 'create_blog' %}" method="post" enctype="multipart/form-data">
 {% csrf_token %}
 {{ form | as_bootstrap }}
-        <input class="cstm-btn blog-btn" type="submit" value="Create">
+        <input class="btn-success blog-btn" type="submit" value="Create">
     </form>
 </div>
 

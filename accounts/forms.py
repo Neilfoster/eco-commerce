@@ -50,7 +50,6 @@ class EditProfileForm(forms.Form):
         model = Profile
         fields = (
             'bio',
-            'profile_pic',
             'location',
             'birthday'
-            )
+            ) 

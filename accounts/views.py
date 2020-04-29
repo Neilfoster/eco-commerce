@@ -4,9 +4,8 @@ from django.core.urlresolvers import reverse
 from .forms import UserLoginForm, UserRegistrationForm, EditProfileForm
 from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User
 from .models import Profile
-from checkout.models import Order, OrderLineItem
+from  checkout.models import Order, OrderLineItem
 from . import forms
 
 
@@ -48,19 +47,21 @@ def login(request):
     args = {'user_form': user_form, 'next': request.GET.get('next', '')}
     return render(request, 'login.html', args)
 
+
 @login_required
 def profile(request):
     """ A view that displays the profile page of a logged in user """
     orders = request.user.orders.all()
     args = {'profile': profile, 'orders': orders}
     return render(request, 'profile.html', args)
-    
-    
+
+
 @login_required(login_url="/accounts/login")
 def edit_profile(request):
     if request.method == 'POST':
+        user = request.user
         form = EditProfileForm(request.POST, request.FILES)
-        profile = Profile.objects.all()
+        profile = Profile.objects.filter(user =request.user)
         if form.is_valid():
             instance = form.save(commit=False)
             instance.author = request.user
@@ -69,6 +70,7 @@ def edit_profile(request):
     else:
         form = forms.EditProfileForm()
     return render(request, 'edit_profile.html', {'form': form})
+
 
 def register(request):
     """A view that manages the registration form"""

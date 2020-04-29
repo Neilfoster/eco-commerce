@@ -1,26 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="row row-flex profile">
-        <h2 class="col-12">{{ user.username }}'s User Profile</h2>
-        <div class="row">
-            <div class="profile-pic col-3" style="background-image: url('{{ MEDIA_URL }}{{ user.profile.profile_pic }}')"></div>
-            <div class="col-9">
-            <p class="col-12">Bio: {{ user.profile.bio }} </p>
-            <p class="col-12">Location: {{ user.profile.location }} </p>
-            <p class="col-12">Birthday:  {{ user.profile.birthdate }} </p>
-            <h2 class="order-head">Order History</h2> 
+        <h1 class="ord-history-head h2">{{ user.username|capfirst }}'s Order History</h1>
             <hr>
             {% for order in orders %}
-               <p class="order-item"><b> {{ order.date }}</b> </p>
-            <br>
+            <div class="order-panel">
+                <dl>
+               <h2 class="h5">{{ order.date }}</h2>
                 {% for lineitem in order.orderlineitems.all %}
-                   <p class="order-item">{{ lineitem.product }}: {{ lineitem.quantity }}</p>
+                   <dd>{{ lineitem.product }}: {{ lineitem.quantity }}</dd>
                 {% endfor %}
-            <br><hr><br>
-            {% endfor %}
-            <button type="button" class="cstm-btn col-12"><a href="{% url 'edit_profile' %}">Edit Profile</a></button>
+                </dl>
             </div>
-        </div>
-    </div>
+            {% endfor %}
     <hr>
 {% endblock %}

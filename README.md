@@ -14,7 +14,7 @@ HTML, CSS, JavaScript/jQuery, Python and Django.
 
 ### The purpose of this site
 
-This site was created as a fully- fledged e-commerce websit , using Stripe's API
+This site was created as a fully- fledged e-commerce website , using Stripe's API
 to process the payment side.
 
 ### User Stories
@@ -31,7 +31,7 @@ I wanted to create a simple and intuitive web site which users can browse throug
 both shop and blog features with ease. I wanted to use a natural color palatte and 
 the design clean and un-cluttered to allow for a positive user experience 
 
-##Features 
+## Features 
 
 This site is primarily designed as an ecommerce site but also has a blog feature 
 where only registered users can add a blog post
@@ -52,7 +52,8 @@ where only registered users can add a blog post
 
  
 
- ##Database Data
+## Database Data
+
 
 ## Things I would improve if I had more time
 
@@ -60,5 +61,29 @@ where only registered users can add a blog post
 ## Testing 
 Testing is done using the Django testing framework, continuously integrated by Travis. 
 There is also an extensive list of manual tests, which are included in the testing.txt folder in the repo.
+
+## HTML & CSS
+All my HTML and CSS are valid and checked with the following validators:
+
+* [HTML Validator](https://validator.w3.org/)
+* [CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+## Deployment 
+Getting my application ready for deployment included the following steps :
+* Removing all my hard-coded variables and keys to Heroku's Config Vars for production
+* Ensuring my applications requirements.txt is up to date with all the packages used
+    in my application.
+* Setting up a Procfile which is required by Heroku to know what command to
+    run in order for my application to start.
+* Setting Djangos debbuging to false in settings.py 
+* Adding to Heroku to Allowed Hosts in my settings.py 
+* Pushing all my latest code to GitHub ready for deployment via Heroku's GitHub function
+    where you can deploy from GitHub to the app.
+
+### When you deploy your app successfully Heroku will give you the URL where your app is hosted
+
+* If your deployment in unsuccessful Heroku will log the cause of the error , which you can
+    see in the 'view log ' section on the Heroku site. Here you can find a detailed view of what 
+    has caused your application not to work successfully.
 
 ## Acknowledgements

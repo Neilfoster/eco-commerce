@@ -56,21 +56,6 @@ def profile(request):
     return render(request, 'profile.html', args)
 
 
-@login_required(login_url="/accounts/login")
-def edit_profile(request):
-    if request.method == 'POST':
-        user = request.user
-        form = EditProfileForm(request.POST, request.FILES)
-        profile = Profile.objects.filter(user =request.user)
-        if form.is_valid():
-            instance = form.save(commit=False)
-            instance.author = request.user
-            instance.save()
-            return render(request, "profile.html", {'profile': profile})
-    else:
-        form = forms.EditProfileForm()
-    return render(request, 'edit_profile.html', {'form': form})
-
 
 def register(request):
     """A view that manages the registration form"""

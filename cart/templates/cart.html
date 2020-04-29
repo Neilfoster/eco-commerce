@@ -8,8 +8,8 @@
     <div class="col-12">
         <div class="caption row checkout-itm">
                 <div id="cart-product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
-                <h5 class="col-md-3 col-sm-12">{{ item.product.name }}</h5>
-                <p class="col-md-3 col-sm-12">{{ item.product.format_price_as_euros }}</p>
+                <h5 class="col-md-3 col-sm-12 mb-0">{{ item.product.name }}</h5>
+                <p class="col-md-3 col-sm-12 mb-0">{{ item.product.format_price_as_euros }}</p>
                 <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                     {% csrf_token %}
                     <div class="form-group col-md-6 col-sm-12">

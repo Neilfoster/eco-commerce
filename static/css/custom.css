@@ -5,7 +5,8 @@ body {
 .cstm-container {
     min-height: calc(100vh - 242px);
 }
-/*-------- Navbar -------*/
+
+/*---------- Navbar -------*/
 .cstm-nav {
   background-color:#406730;
 }
@@ -29,6 +30,7 @@ body {
   }
 
 /*-------- index page card display button --------*/
+
 .cstm-btn {
     margin:auto;
     color:#FFFFFF;
@@ -167,6 +169,7 @@ body {
 .btn-success{
     text-decoration: none;
 }
+
 .blog-btn {
     margin:auto;
     color:#FFFFFF;
@@ -178,11 +181,6 @@ body {
     text-decoration: none;
     font-size: 12px;
     letter-spacing: 0.1em;
-}
-
-.blog-btn::hover {
-    transform: scale(1.5);
-    color: blue;
 }
 
 #blog-head {
@@ -222,7 +220,6 @@ body {
     color:#406730;
     font-size: 2rem;
 }
-
 
 .checkout-itm {
     padding:5%;
@@ -292,7 +289,9 @@ form.form-inline {
 #cstm-success a {
     margin:auto;
 }
+
 /*--------- Profile Page ------*/
+
 .order-panel {
     border: 2px solid #d1d4cf;
     padding:2%;
@@ -312,7 +311,9 @@ form.form-inline {
 .ord-history-head{
     padding-top: 58px;
 }
+
 /*--------- REGISTER PAGE ------*/
+
 .form-group {
     margin-top:2%;
 }
@@ -326,6 +327,7 @@ form.form-inline {
 }
 
 /* -------- Password Reset ------------*/
+
 .password-head{
     padding-top:5%;
 }
@@ -337,9 +339,6 @@ form.form-inline {
   color: #406730;
   padding-top: 2;
   text-align:center;
-  /*position: sticky;
-  bottom: 0;
-  width: 100%;*/
   left:0;
   }
 

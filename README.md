@@ -2,39 +2,55 @@
 
 # Nádúr | Milestone Project 4
 
-### Why I made this site
+### Project Purpose
 
-Nádúr is an App that allows users to buy natural Eco friendly cleaning 
-and self care products as an alternative to the chemical heavy versions sold in
-most supermarkets and stores. 
-This is my final project at the end of [Code Institute's](https://codeinstitute.net/) Full
-Stack Web Developer course. This site should showcase my hard work over the last year
-to include both front-end and back-end development. This site is written in
-HTML, CSS, JavaScript/jQuery, Python and Django.
+This is my fourth and final [Code Institute](https://codeinstitute.net/)project in my full stack sofware development diploma course.
+The Purpose of this project was to create a fully fledged e-commerce website in which users can register
+and avail of some of the sites servies using stripe's API to process the payment side. I used all of the 
+knowledge I had learnt over the past year and used all technologies that had been covered on the course.
+Nádúr is a fictional E-commerce site that allows users to buy natural Eco friendly cleaning and self care products as an 
+alternative to the chemical heavy versions sold in most supermarkets and stores. The site sells both Household and selfcare
+products. It also features a blog section where you can read posts about issues related to the site such as environmental
+issues and opionions about natural products. Registered users of the site can also add their own blog posts as part of a thriving
+and dynamic online community of like minded individuals. 
 
-### The purpose of this site
+### Goals
 
-This site was created as a fully- fledged e-commerce website , using Stripe's API
-to process the payment side.
+* The main goal of the project is to create a website in which users can purchase our range of products and become life
+  long consumers of the brand. 
+* To engage the user and make them feel like a part of a community by offering a blog section to both read and add content to
+* Products should be easy to find and easy to proceed to the checkout for payment
+
+## UX
+
+I wanted to create a site that is easy to use and intuitive allowing the user to browse casually and mindfully through the various sections.
+To adhere to to theme of nature , I wanted to use a natural color palette and create an open space with plenty of breathing room to
+browse without being overwhelemed by unnecessary information and clutter. 
+As the site sells both household and selfcare products I wanted to separate these two sections from each other so the user browse through
+each section indivdually but also have the option to browse through all prodcuts together if this was desired. I achieved this by diving the 
+sections visually on the landing page and also having a "Shop" tab in the nav bar to show all products together. 
+I also thought it was important to showcase the blog section on the landing page to allow users to go straight to the blog section
+this can also be achieved via the "Blog" link on the navbar. 
+I deviated slightly from my original wireframes , initially I wanted the blog image on the landing page and the text to be nested side by side
+but after viewing this I deceided it looked much better placed above the text and it also kept the same theme as the product sections.
+Also in the shop view I added a light grey coloured border to allow for a visual seperation of content and a much cleaner presentation. 
+
 
 ### User Stories
 
 > As a user I would like to be able buy natural self care products online rather 
 that the chemical heavy alternatives sold in most high street stores
 
-> I need to an App where I can purchase natural cleaning products for myhousehold as 
+> I need to an App where I can purchase natural cleaning products for my household as 
 I have a yound child with allergies 
-
-### UX
-
-I wanted to create a simple and intuitive web site which users can browse through
-both shop and blog features with ease. I wanted to use a natural color palatte and 
-the design clean and un-cluttered to allow for a positive user experience. 
 
 ## Features 
 
-This site is primarily designed as an ecommerce site but also has a blog feature 
-where only registered users can add a blog post
+* The abiltiy to create an account and purchase products via stripes API payment system.
+* Registered users to be able to able to view their order history via the history tab on the navbar
+* Registered users to be able to add a blog post to our blog section to allow both registered and non 
+  registered users to read. 
+* The site should be easy to use and responsive on mobiles, desktops and tablets.
 
 ## Wireframes
  insert Wireframes here
@@ -50,15 +66,15 @@ where only registered users can add a blog post
 * [Stripe](https://stripe.com/ie)
 * [Amazon Web Services](https://aws.amazon.com/)
 
- 
-
-## Database Data
-
 
 ## Things I would improve if I had more time
 I would have liked to create a market place for independent makers of any selfcare or household products
 to sell their products. This could be then intergrated into their profile page and could be reviewed by
 other users via a rating system. 
+I would also have liked to create a comment section underneath each blog post which could only be viewed
+by registered users. 
+Both these features would create an online community of people who are passionate about sustainable and 
+natural products and establish the brand as a company who also adheres to these issues.
 
 ## Testing 
 Testing is done using the Django testing framework, continuously integrated by Travis. 
@@ -71,6 +87,7 @@ All my HTML and CSS are valid and checked with the following validators:
 * [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 ## Deployment 
+
 Getting my application ready for deployment included the following steps :
 * Removing all my hard-coded variables and keys to Heroku's Config Vars for production
 * Ensuring my applications requirements.txt is up to date with all the packages used

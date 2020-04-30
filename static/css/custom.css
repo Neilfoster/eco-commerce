@@ -290,6 +290,10 @@ form.form-inline {
     margin:auto;
 }
 
+.crt {
+    padding: 2% 5%;
+}
+
 /*--------- Profile Page ------*/
 
 .order-panel {

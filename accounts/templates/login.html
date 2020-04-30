@@ -4,12 +4,10 @@
     <form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform">
         <fieldset class="form-group">
             <legend class="page-head">Login</legend>
-            {% csrf_token %}
-            {{ user_form | as_bootstrap }}
-            
-             <p><a href="{% url 'password_reset' %}">Forgot my password</a></p>
-             
-            <button type="submit" class="btn cstm-btn">Login</button>
+                {% csrf_token %}
+                {{ user_form | as_bootstrap }}
+            <p><a href="{% url 'password_reset' %}">Forgot my password</a></p>
+             <input class="btn-success blog-btn" type="submit" value="Log in">
         </fieldset>
     </form>
 {% endblock %}

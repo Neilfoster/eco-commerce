@@ -1,16 +1,17 @@
 {% extends "base.html" %}
+
 {% block content %}
         <h1 class="ord-history-head h2">{{ user.username|capfirst }}'s Order History</h1>
             <hr>
             {% for order in orders %}
             <div class="order-panel">
                 <dl>
-               <h2 class="h5">{{ order.date }}</h2>
-                {% for lineitem in order.orderlineitems.all %}
-                   <dd>{{ lineitem.product }}: {{ lineitem.quantity }}</dd>
-                {% endfor %}
+                    <h2 class="h5">{{ order.date }}</h2>
+                    {% for lineitem in order.orderlineitems.all %}
+                        <dd>{{ lineitem.product }}: {{ lineitem.quantity }}</dd>
+                    {% endfor %}
                 </dl>
             </div>
             {% endfor %}
-    <hr>
+        <hr>
 {% endblock %}

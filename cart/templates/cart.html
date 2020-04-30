@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% extends 'base.html'%}
-{% block content %}
 
+{% block content %}
 <div class="row row-flex">
     <h3 class=" col-12 checkout-head">Shopping Cart</h3>
     {% for item in cart_items %}
@@ -25,7 +25,6 @@
                 </form>
         </div>
     </div>
-    
     {% endfor %}
 </div>
 <div class="check-foot">
@@ -35,5 +34,4 @@
         <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
     </div>
 </div>
-
 {% endblock %}

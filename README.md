@@ -53,7 +53,7 @@ I have a yound child with allergies
 * The site should be easy to use and responsive on mobiles, desktops and tablets.
 
 ## Wireframes
- insert Wireframes here
+ Wireframes can be found in the **Wireframes** folder within the repo.
 
 ## Technology Used
 
@@ -78,7 +78,7 @@ natural products and establish the brand as a company who also adheres to these 
 
 ## Testing 
 Testing is done using the Django testing framework, continuously integrated by Travis. 
-There is also an extensive list of manual tests, which are included in the testing.txt folder in the repo.
+There is also an extensive list of manual tests, which are included in the **testing.txt** folder in the repo.
 
 ### HTML & CSS
 All my HTML and CSS are valid and checked with the following validators:
@@ -86,7 +86,7 @@ All my HTML and CSS are valid and checked with the following validators:
 * [HTML Validator](https://validator.w3.org/)
 * [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-## Deployment 
+### Deployment 
 
 Getting my application ready for deployment included the following steps :
 * Removing all my hard-coded variables and keys to Heroku's Config Vars for production
@@ -98,9 +98,7 @@ Getting my application ready for deployment included the following steps :
 * Adding to Heroku to Allowed Hosts in my settings.py 
 * Pushing all my latest code to GitHub ready for deployment via Heroku's GitHub function
     where you can deploy from GitHub to the app.
-
 * When you deploy your app successfully Heroku will give you the URL where your app is hosted
-
 * If your deployment in unsuccessful Heroku will log the cause of the error , which you can
     see in the 'view log ' section on the Heroku site. Here you can find a detailed view of what 
     has caused your application not to work successfully.

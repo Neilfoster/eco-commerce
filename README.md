@@ -4,14 +4,14 @@
 
 ### Project Purpose
 
-This is my fourth and final [Code Institute](https://codeinstitute.net/) project in my full stack software development diploma course.
+This is my fourth and final [Code Institute](https://codeinstitute.net/) project in my full-stack software development diploma course.
 The purpose of this project was to create a fully-fledged e-commerce website in which users can register
-and avail of some of the sites services using stripe's API to process the payment side. I used all of the 
+and avail of some of the site's services using stripe's API to process the payment side. I used all of the
 knowledge I had learned over the past year and used all technologies that had been covered on the course.
 Nádúr is a fictional E-commerce site that allows users to buy natural Eco-friendly cleaning and self-care products as an 
-alternative to the chemical-heavy versions sold in most supermarkets and stores. The site sells both household and self care
+alternative to the chemical-heavy versions sold in most supermarkets and stores. The site sells both household and self-care
 products. It also features a blog section where you can read posts about issues related to the site such as environmental
-issues and opinions about natural products. Registered users of the site can also add their Own blog posts as part of a thriving
+issues and opinions about natural products. Registered users of the site can also add their blog posts as part of a thriving
 and dynamic online community of like-minded individuals. 
 
 ### Goals
@@ -26,8 +26,8 @@ and dynamic online community of like-minded individuals.
 I wanted to create a site that is easy to use and intuitive allowing the user to browse casually and mindfully through the various sections.
 To adhere to the theme of nature, I wanted to use a natural color palette and create an open space with plenty of breathing room to
 browse without being overwhelmed by unnecessary information and clutter. 
-As the site sells both household and self care products I wanted to separate these two sections from each other so the user browses through
-each section individually but also have the option to browse through all products together if this was desired. I achieved this by diving the 
+As the site sells both household and self-care products I wanted to separate these two sections from each other so the user browses through
+each section individually but also has the option to browse through all products together if this was desired. I achieved this by diving the 
 sections visually on the landing page and also having a "Shop" tab in the navbar to show all products together. 
 I also thought it was important to showcase the blog section on the landing page to allow users to go straight to the blog section
 this can also be achieved via the "Blog" link on the navbar. 
@@ -46,7 +46,7 @@ I have a young child with allergies
 
 ## Features 
 
-* The abiltity to create an account and purchase products via stripes API payment system.
+* The ability to create an account and purchase products via stripes API payment system.
 * Registered users to be able to able to view their order history via the history tab on the navbar
 * Registered users to be able to add a blog post to our blog section to allow both registered and non-registered users to read. 
 * The site should be easy to use and responsive on mobiles, desktops and tablets.
@@ -67,7 +67,7 @@ I have a young child with allergies
 
 
 ## Things I would improve if I had more time
-I would have liked to create a market place for independent makers of any self care or household products
+I would have liked to create a market place for independent makers of any self-care or household products
 to sell their products. This could be then integrated into their profile page and could be reviewed by
 other users via a rating system. 
 I would also have liked to create a comment section underneath each blog post which could only be viewed
